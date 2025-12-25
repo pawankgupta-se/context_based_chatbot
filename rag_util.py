@@ -12,7 +12,7 @@ from langchain_classic.chains import RetrievalQA
 # Load environment variables from .env file
 load_dotenv()
 
-working_dir = os.path.dirname(os.path.abspath((__file__)))
+working_dir = os.getcwd()
 
 # Load embedding model
 embedding = HuggingFaceEmbeddings()

@@ -1,4 +1,5 @@
 #%%
+
 import os
 
 import streamlit as st
@@ -6,7 +7,7 @@ import streamlit as st
 from rag_util import process_document_to_chroma_db, answer_question
 
 # Set the working directory
-working_dir = os.path.dirname(os.path.abspath((__file__)))
+working_dir = os.getcwd()
 st.title("Llama-3.3-70B - Document RAG")
 
 #file uploader widget
